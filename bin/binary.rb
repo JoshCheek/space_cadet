@@ -1,7 +1,6 @@
 class Binary
-  attr_accessor :parser_pidfile, :show_help, :errors, :main, :class_paths, :outstream, :errstream, :help_screen
-  def initialize(main:nil, show_help:false, errors:[], parser_pidfile: default_pidfile, outstream:, errstream:, help_screen:)
-    self.parser_pidfile = parser_pidfile
+  attr_accessor :show_help, :errors, :main, :class_paths, :outstream, :errstream, :help_screen
+  def initialize(main:nil, show_help:false, errors:[], outstream:, errstream:, help_screen:)
     self.help_screen    = help_screen
     self.outstream      = outstream
     self.show_help      = show_help
@@ -21,14 +20,6 @@ class Binary
 
   def errors?
     errors.any?
-  end
-
-  def server_down?
-    !server_up?
-  end
-
-  def server_up?
-    File.exist? parser_pidfile
   end
 
   def cd_root!

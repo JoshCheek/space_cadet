@@ -7,12 +7,6 @@ class RunTests {
       // define
       var root = new Description();
 
-      ruby.ParserSpec.describe(root);
-      ruby.LanguageGoBagSpec.describe(root);
-      ruby.BootstrappedWorldSpec.describe(root);
-      ruby.WorldSpec.describe(root);
-      ruby.InterpreterSpec.describe(root);
-
       spaceCadet.RunningASuiteSpec.describe(root);
       spaceCadet.AssertionsSpec.describe(root);
       spaceCadet.BeforeBlocksSpec.describe(root);

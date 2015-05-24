@@ -1,6 +1,6 @@
 package spaceCadet;
 
-// TODO: a.null, a.nNull, a.true, a.false
+// TODO: a.null, a.nNull
 class AssertionsSpec {
   public static var currentLine(get,never):Int;
   static function get_currentLine() {

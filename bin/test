@@ -23,11 +23,6 @@ if 1 < ARGV.count
   bin.add_error "Expected 1 argument at most, but you gave #{ARGV.inspect}"
 end
 
-bin.server_down? and bin.add_error \
-  "Server is not running (no pidfile at #{bin.parser_pidfile.inspect}"\
-  " probably do `rake parser:server:start`"
-
-
 # early exits
 bin.print_help    if bin.show_help?
 bin.print_errors  if bin.errors?
