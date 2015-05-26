@@ -14,12 +14,12 @@ Example output
 
 Using Space Cadet to test itself (runner was written in Ruby):
 
-![images/running.png]
+![images/running.png](images/running.png)
 
 
 Some skips and final results:
 
-![images/results.png]
+![images/results.png](images/results.png)
 
 History
 -------
